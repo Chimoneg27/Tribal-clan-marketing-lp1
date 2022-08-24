@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mustard: hsla(48, 94%, 62%, 1);
+    --jet: hsla(40, 4%, 15%, 1);
+    --eerie-black: hsla(0, 4%, 11%, 1);
+    --cinnabar: hsla(7, 83%, 57%, 1);
+    --white: hsl(0, 0%, 100%);
+    --space-cadet: hsla(223, 47%, 27%, 1);
+    --turquoise-green: hsla(159, 50%, 70%, 1);
+    --Very-Pale-Blue: hsl(209, 43%, 73%);
+    --white: hsl(0, 0%, 100%);
+    --Very-Pale-Blue-1: hsl(207, 100%, 98%);
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    padding: 2em 1em;
+    font-family: "Poppins";
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header h2{
+    color: var(--turquoise-green);
+}
+
+
+.subscription{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btn-1{
+    background-color: var(--turquoise-green);
+    color: var(--jet);
+    border-radius: 0.5rem;
+    width: 25%;
+    padding: 1em 1.5em;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.short-desc{
+    width: 100%;
+    padding: 3em 2em;    
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.btn-4{
+    background-color: var(--jet);
+    color: var(--white);
+    padding: 1em 2em;
+    border:none;
+    font-weight: 575;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.description{
+    font-family: "Merriweather";
+    padding: 15rem 2rem;
+    width: 50%;
+}
+
+.description h1{
+    margin-bottom: 1rem;
+    color: var(--space-cadet);
+    text-transform: capitalize;
+}
+
+.description p{
+    padding-right: 15rem;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.get-started{
+    width: 100%;
+    padding: 2em 3em;
+    text-align: center;
+    font-family: "Poppins";
+    margin-bottom: 2rem;
+}
+
+.get-started h1{
+    font-size: 2.5rem;
+}
+
+.btn-3{
+    margin-top: 2rem;
+    width: 15%;
+    background-color: var(--space-cadet);
+    border: none;
+    padding: 1em 2em;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.features{
+    margin-top: 5rem;
+    font-family: "Open sans";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2em;
+    gap: 1rem;
+    background-color: var(--Very-Pale-Blue-1);
+}
+
+.feature-box img{
+    width: 20%;
+    margin-bottom: 2rem;
+    filter: invert(0.5) sepia(1) saturate(4.5) hue-rotate(166deg) brightness(1);
+}
+
+.feature-box{
+    text-align: center;
+}
+
+.footer{
+    background-color: var(--space-cadet);
+    width: 100%;
+    padding: 3em 5em;
+    margin-top: 0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--white);
+    font-family: "Poppins";
+}
+
+.social img{
+    width: 8%;
+    filter: invert(1) sepia(1) saturate(4.5) hue-rotate(166deg) brightness(1);
+}
+
+.footer ul{
+    list-style: none;
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 100%;
+    }
+
+    .header{
+        width: 100%;
+        padding: 2em 1em;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .btn-1{
+        width: 70%;
+        padding: 1em 0.5em;
+    }
+
+    .short-desc{
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .description{
+        width: 100%;
+        padding: 2em 1em;
+        text-align: center;
+    }
+
+    .description p{
+        padding: 2em 1em;
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    .btn-4{
+        width: 90%;
+    }
+
+    .get-started{
+        width: 100%;
+        padding: 2em 1em;
+    }
+
+    .get-started h1{
+        font-size: 2rem;
+    }
+
+    .btn-3{
+        width: 80%;
+    }
+
+    .features{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        gap: 1rem;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .feature-box img{
+        width: 70%;
+    }
+
+    .footer{
+        width: 100%;
+        padding: 3em 2em;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
